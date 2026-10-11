@@ -1,0 +1,163 @@
+/* Apply the box model to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #d99b00;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Navigation using Flexbox */
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    width: 100%;
+    padding: 25px 20px;
+}
+
+/* Introduction */
+.intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Collections using Flexbox */
+.collections {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 0 30px;
+}
+
+/* Individual Jewellery Card */
+.card {
+    background-color: white;
+    width: 230px;
+    padding: 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Images */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+/* Card Heading */
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Card Description */
+.card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Festive Offer */
+.offer {
+    background-color: #fff8e8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    border-left: 4px solid #d99b00;
+}
+
+.offer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.offer p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background-color: #d99b00;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+
+    .header nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .collections {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .intro h2 {
+        font-size: 23px;
+    }
+}
